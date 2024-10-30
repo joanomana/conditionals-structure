@@ -1,14 +1,24 @@
-print("Exercise 4")
+print("Exercise 5")
 
-word1 = str(input("Enter a word: "))
-word2 = str(input("Enter another word: "))
-
-if len(word1) > len(word2):
-    sword=len(word1)-len(word2)
-    print(f"The {word1} have {sword} more letters than {word2}")
-elif len(word2) > len(word1):
-        sword=len(word2)-len(word1)
-        print(f"The {word2} have {sword} more letters than {word1}")
-else:
-        print(f"{word1} and {word2} are the same length")
-
+print("This program orders two numbers")
+num1= int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+nummbers = sorted([num1, num2])
+print(f"The numbers in order will be: {nummbers}")
+print()
+print()
+print("This program orders three numbers")
+num1= int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+num3 = int(input("Enter another number: "))
+nummbers = sorted([num1, num2, num3])
+print(f"The numbers in order will be: {nummbers}")
+print()
+print()
+print("This program orders four numbers")
+num1= int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+num3 = int(input("Enter another number: "))
+num4= int(input("Enter another number: "))
+nummbers = sorted([num1, num2, num3,num4])
+print(f"The numbers in order will be: {nummbers}")
