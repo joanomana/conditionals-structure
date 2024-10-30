@@ -1,12 +1,14 @@
-print("Exercise 3")
+print("Exercise 4")
 
-dividing = int(input("Enter the dividing: "))
-divider = int(input("Enter the divider: "))
+word1 = str(input("Enter a word: "))
+word2 = str(input("Enter another word: "))
 
-division = dividing/divider
-if division % 1 == 0:
-    print("The division is exact")
-else: 
-    print("The division is not exact")
-
+if len(word1) > len(word2):
+    sword=len(word1)-len(word2)
+    print(f"The {word1} have {sword} more letters than {word2}")
+elif len(word2) > len(word1):
+        sword=len(word2)-len(word1)
+        print(f"The {word2} have {sword} more letters than {word1}")
+else:
+        print(f"{word1} and {word2} are the same length")
 
