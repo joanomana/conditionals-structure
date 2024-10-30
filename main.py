@@ -1,13 +1,10 @@
-print("Exercise 1")
+print("Exercise 2")
 
-number = int(input("Enter a number: "))
+year = int(input("Enter a year: "))
 
-if number % 2 == 0:
-    print("The number is even.")
-elif number %5==0:
-    print("The number is divisible by 5.")
-else: print("The number is odd.")
-
-print("End of the program.")
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print("The year is a leap year")
+else:
+    print("The year is not a leap year")
 
 
