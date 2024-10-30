@@ -1,10 +1,12 @@
-print("Exercise 2")
+print("Exercise 3")
 
-year = int(input("Enter a year: "))
+dividing = int(input("Enter the dividing: "))
+divider = int(input("Enter the divider: "))
 
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print("The year is a leap year")
-else:
-    print("The year is not a leap year")
+division = dividing/divider
+if division % 1 == 0:
+    print("The division is exact")
+else: 
+    print("The division is not exact")
 
 
