@@ -1,24 +1,10 @@
-print("Exercise 5")
+print("Exercise 6")
 
-print("This program orders two numbers")
-num1= int(input("Enter a number: "))
-num2 = int(input("Enter another number: "))
-nummbers = sorted([num1, num2])
-print(f"The numbers in order will be: {nummbers}")
-print()
-print()
-print("This program orders three numbers")
-num1= int(input("Enter a number: "))
-num2 = int(input("Enter another number: "))
-num3 = int(input("Enter another number: "))
-nummbers = sorted([num1, num2, num3])
-print(f"The numbers in order will be: {nummbers}")
-print()
-print()
-print("This program orders four numbers")
-num1= int(input("Enter a number: "))
-num2 = int(input("Enter another number: "))
-num3 = int(input("Enter another number: "))
-num4= int(input("Enter another number: "))
-nummbers = sorted([num1, num2, num3,num4])
-print(f"The numbers in order will be: {nummbers}")
+char = input("Enter a character: ")
+if char.isdigit():
+    print("The character is a number.")
+elif char.isalpha():
+    print("The character is a letter.")
+else:
+    print("The character is a special character.")
+
