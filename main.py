@@ -1,11 +1,13 @@
-player1 = int(input("Games won by A: "))
-player2 = int(input("Games won by B: "))
-
-if ((player1 >= 6 and player1<=7) and player1 - player2 >= 2) or (player1 == 7 and player2 > 5)or (player1 == 7 and player2 == 6):
-    print("A won the set")
-elif ((player2 >= 6 and player2<=7) and player2 - player1 >= 2)and (player2 == 7 and player1 >= 5) or (player2 == 7 and player1 == 6):
-    print("B won the set")
-elif (player1 > 7 or player2 > 7) or (player1 == 7 and player2 < 6) or (player2 == 7 and player1 <6):
-    print("Invalid result")
+sideA = float(input("Enter the first side of the triangle: "))
+sideB = float(input("Enter the second side of the triangle: "))
+sideC = float(input("Enter the third side of the triangle: "))
+  
+if (sideA + sideC) > sideB and (sideB + sideC) > sideA and (sideA + sideB) > sideC:
+    if sideA == sideB == sideC:
+        print("The triangle is equilateral.")
+    elif sideA == sideB or sideA == sideC or sideB == sideC:
+        print("The triangle is isosceles.")
+    else:
+        print("The triangle is scalene.")
 else:
-    print("The set is not over yet")
+    print("The triangle is invalid.")
